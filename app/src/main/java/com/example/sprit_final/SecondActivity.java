@@ -11,6 +11,7 @@ import com.example.sprit_final.databinding.ActivitySecondBinding;
 
 public class SecondActivity extends AppCompatActivity {
 
+    private ActivitySecondBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,18 @@ public class SecondActivity extends AppCompatActivity {
 
 
             }
-            private void sendEmail() {
+            private void sendEmail() { String TO = "jguzmanalarcon@gmail.com";
+                String CC = new String("");
+            Intent emailIntent = new Intent(Intent.ACTION_SEND);
+            emailIntent.setData(Uri.parse("mailto: jguzmanalarcon@gmail.com"));
+            emailIntent.setType("text/plain");
+            emailIntent.putExtra(Intent.EXTRA_EMAIL,TO);
+            emailIntent.putExtra(Intent.EXTRA_CC,CC);
+            emailIntent.putExtra(Intent.EXTRA_SUBJECT,"Asunto");
+            emailIntent.putExtra(Intent.EXTRA_TEXT,"Mensaje");
+
+            startActivity(emailIntent);
+
             }
         });
 

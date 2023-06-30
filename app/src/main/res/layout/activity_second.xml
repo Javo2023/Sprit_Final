@@ -10,33 +10,31 @@
         android:id="@+id/buttonCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="Enviar mensaje por correo"
-        app:layout_constraintEnd_toEndOf="@+id/message"
-        app:layout_constraintStart_toStartOf="@+id/message"
-        app:layout_constraintTop_toBottomOf="@+id/message" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/editTextText2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
 
     <Button
         android:id="@+id/buttonLinkedin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
         android:text="Perfil Linkedin"
         app:layout_constraintEnd_toEndOf="@+id/buttonCorreo"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@+id/buttonCorreo"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCorreo" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <Button
         android:id="@+id/buttonWhatsapp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
         android:text="Contactar por Whatsapp"
         app:layout_constraintEnd_toEndOf="@+id/buttonLinkedin"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="@+id/buttonLinkedin"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLinkedin" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <TextView
         android:id="@+id/textView"
@@ -53,30 +51,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/message"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="60dp"
-        android:hint="Escriba Mensaje"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="60dp"
         android:layout_height="52dp"
-        app:srcCompat="@drawable/linkedin"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="421dp" />
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCorreo"
+        app:layout_constraintStart_toStartOf="@+id/buttonCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCorreo"
+        app:srcCompat="@drawable/linkedin" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="89dp"
         android:layout_height="77dp"
-        app:srcCompat="@drawable/what"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="535dp" />
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLinkedin"
+        app:layout_constraintStart_toStartOf="@+id/buttonLinkedin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLinkedin"
+        app:srcCompat="@drawable/what" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="message"
+        android:inputType="text"
+        android:paddingTop="35dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:paddingBottom="35dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
