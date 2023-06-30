@@ -20,7 +20,7 @@
         android:id="@+id/buttonLinkedin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="124dp"
         android:text="Perfil Linkedin"
         app:layout_constraintEnd_toEndOf="@+id/buttonCorreo"
         app:layout_constraintHorizontal_bias="0.493"
@@ -31,7 +31,7 @@
         android:id="@+id/buttonWhatsapp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="84dp"
         android:text="Contactar por Whatsapp"
         app:layout_constraintEnd_toEndOf="@+id/buttonLinkedin"
         app:layout_constraintHorizontal_bias="0.507"
@@ -62,5 +62,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        app:srcCompat="@drawable/linkedin"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="89dp"
+        android:layout_height="77dp"
+        app:srcCompat="@drawable/what"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="535dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
